@@ -1,0 +1,12 @@
+# PGPASSWORD=123 psql -h localhost -d consumer_complaints -U spring_batch_test
+version: "3"
+services:
+  postgres:
+    image: postgres:11
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: spring_batch_test
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: consumer_complaints
+    command: postgres -c log_statement=all -c log_duration=true -c log_min_duration_statement=10 -c log_line_prefix="%m" -c log_timezone="Europe/Budapest"
