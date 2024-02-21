@@ -22,7 +22,7 @@
         <java.version>11</java.version>
 
         <!-- Dependencies -->
-        <postgres.version>42.4.3</postgres.version>
+        <postgres.version>42.7.2</postgres.version>
         <commons-dbutils.version>1.7</commons-dbutils.version>
         <commons-csv.version>1.8</commons-csv.version>
         <!-- Plugin dependencies -->
